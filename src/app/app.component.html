@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12 text-center h1 bg-primary">Welcome To Credit Card Search Application</div>
+    <div class="col-sm-3" style="background-color:violet">
+      <app-search-component (searchData)="getUser($event)"></app-search-component> 
+    </div>
+  <div class="col-sm-9" style="background-color: thistle">
+      <app-result  [userData]="userData"></app-result>
+  </div>
+</div>

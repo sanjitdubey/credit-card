@@ -1,0 +1,9 @@
+div-fixed{
+    position : fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .col-diff{
+    margin-right:1.5%;
+  }

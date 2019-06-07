@@ -1,0 +1,10 @@
+<table class="table"  >
+  <tr  >
+    <th *ngFor="let heading of headings">{{heading}}</th>
+  </tr>
+  <tr  *ngFor="let user of users | paginate: { itemsPerPage: 10, currentPage: p }">
+    <td style="width:20px" *ngFor="let term of terms">{{user[term]}}</td>
+  </tr>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+

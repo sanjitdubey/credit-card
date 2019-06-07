@@ -1,0 +1,29 @@
+
+<div class="container-fluid">  
+  <form id="contact" action="" method="post"><br>
+    <fieldset>
+      <input class="form-control" placeholder="First name" type="text" tabindex="1" [(ngModel)]="user.firstName"  name ="firstName" required autofocus>
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="Last name" type="text" tabindex="2" [(ngModel)]="user.lastName"  name ="lastName" required>
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="Age" type="tel" tabindex="3" [(ngModel)]="user.age"  name ="age" required>
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="DOB" type="text" tabindex="4" [(ngModel)]="user.dob"  name ="dob" required>
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="Email" type="email" tabindex="5">
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="Address" type="text" tabindex="6">
+    </fieldset><br>
+    <fieldset>
+      <input class="form-control" placeholder="Card last 4 digits" type="text" tabindex="7">
+    </fieldset><br>
+    <fieldset>
+      <button class="form-control btn btn-primary" name="submit"  (click)="setUserData()">Submit</button>
+    </fieldset>
+  </form>
+</div>
